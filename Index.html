@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/stylesTablet.css">
+    <link rel="stylesheet" href="styles/stylesPhone.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="Logo" src="img/Logo.png" alt="Logo">
+    </header>
+    <main>
+    <section id="CampoEncriptacion">
+        <input type="textarea" pattern="[a-zA-Z]" class="input1" cols="48" rows="16.5" placeholder="Ingrese el texto"></input>
+        <img class="loguito" src="img/bi_exclamation-circle-fill.png">
+        <span class="advertencia">Solo letras minusculas y sin acentos</span>
+            <div class="botones" >
+                <button class="encriptar" onclick="btnEncriptar()">
+                    Encriptar
+                </button>
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                    Desencriptar
+                </button>
+            </div>
+    </section>
+    <section id="MostrarEncriptado">
+        <textarea class="mensaje" readonly="true" cols="21" rows="22" >
+        </textarea>
+        <button class="copiar" onclick="copiar()">
+            Copiar
+        </button>
+        <p class="notFound">Ningún mensaje fue encontrado</p>
+    </section>
+    </main>
+    <script src="/js/script.js"></script>
+</body>
+</html>
